@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <title>AIFLOW Docs – Open standard for multi-agent workflows</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+      name="description"
+      content="AIFLOW documentation – spec, guides and examples for the AIFLOW open standard and Studio."
+    />
+
+    <!-- Tailwind via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      :root {
+        --bg: #020617;
+        --bg-soft: #020617;
+        --bg-elevated: rgba(15, 23, 42, 0.85);
+        --border-subtle: rgba(148, 163, 184, 0.2);
+        --text-main: #e5e7eb;
+        --text-muted: #9ca3af;
+      }
+
+      [data-theme="light"] {
+        --bg: #f8fafc;
+        --bg-soft: #e5e7eb;
+        --bg-elevated: #ffffff;
+        --border-subtle: rgba(148, 163, 184, 0.4);
+        --text-main: #020617;
+        --text-muted: #4b5563;
+      }
+
+      body {
+        background: radial-gradient(circle at top, #0b1120, var(--bg));
+        color: var(--text-main);
+      }
+
+      .card {
+        background: var(--bg-elevated);
+        border: 1px solid var(--border-subtle);
+        backdrop-filter: blur(18px);
+      }
+    </style>
+  </head>
+
+  <body class="text-slate-100 antialiased">
+    <div class="min-h-screen flex flex-col">
+      <!-- NAV -->
+      <header class="w-full py-4 border-b border-slate-800/60 bg-slate-950/80 backdrop-blur-xl">
+        <div class="max-w-7xl mx-auto px-4 flex items-center justify-between gap-4">
+          <a href="./index.html" class="flex items-center gap-3">
+            <div class="h-9 w-9 rounded-xl overflow-hidden bg-slate-900/60 flex items-center justify-center">
+              <img src="./aiflow-logo.svg" alt="AIFLOW logo" class="h-8 w-8" />
+            </div>
+            <div>
+              <p class="font-semibold tracking-tight leading-none">AIFLOW Docs</p>
+              <p class="text-[11px] text-slate-400 tracking-[0.15em] uppercase leading-none">
+                Open standard for multi-agent workflows
+              </p>
+            </div>
+          </a>
+
+          <div class="flex items-center gap-4 text-sm">
+            <a href="./index.html" class="hidden sm:inline-flex text-slate-300 hover:text-sky-400 transition">
+              ← Back to site
+            </a>
+            <a
+              href="https://github.com/joetranga-wq/AIflow"
+              target="_blank"
+              class="px-4 py-2 text-xs font-medium rounded-full bg-sky-500 text-slate-950 hover:bg-sky-400 shadow-lg shadow-sky-500/20 transition"
+            >
+              View on GitHub
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- MAIN -->
+      <main class="flex-1 py-10 md:py-14">
+        <div class="max-w-7xl mx-auto px-4">
+          <header class="mb-8">
+            <p
+              class="inline-flex items-center gap-2 px-3 py-1 text-[11px] rounded-full border border-slate-700/60 mb-3"
+            >
+              <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+              <span class="text-slate-200">v0.1.0 – Open Standard Preview</span>
+            </p>
+            <h1 class="text-3xl md:text-4xl font-semibold tracking-tight mb-3">
+              AIFLOW documentation
+            </h1>
+            <p class="text-sm md:text-base text-slate-300 max-w-2xl">
+              Find the official specification, quick start guides and example workflows for the AIFLOW open standard
+              and Studio.
+            </p>
+          </header>
+
+          <!-- DOCS GRID -->
+          <section
+            id="docs-grid"
+            class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 text-sm"
+          ></section>
+        </div>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="py-6 border-t border-slate-800/70 bg-slate-950/80">
+        <div
+          class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-[11px] text-slate-500 gap-2"
+        >
+          <p>© AIFLOW — Open standard for multi-agent workflows.</p>
+          <div class="flex items-center gap-3">
+            <a
+              href="https://github.com/joetranga-wq/AIflow"
+              target="_blank"
+              class="hover:text-sky-400 transition"
+              >GitHub</a
+            >
+            <span>•</span>
+            <span>MIT Licensed</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- DOCS GENERATOR SCRIPT -->
+    <script>
+      const docs = [
+        {
+          title: "AIFLOW Standard v0.1",
+          tag: "Spec",
+          description:
+            "The official v0.1 specification describing the .aiflow format, execution semantics and rules.",
+          href: "https://github.com/joetranga-wq/AIflow/blob/main/spec/aiflow-v0.1.md"
+        },
+        {
+          title: "Quick start – AIFLOW Studio",
+          tag: "Guide",
+          description:
+            "Clone the repo, launch the Studio and run your first workflow using the browser runtime.",
+          href: "https://github.com/joetranga-wq/AIflow#quick-start"
+        },
+        {
+          title: "CLI runtime – run .aiflow files",
+          tag: "Guide",
+          description: "Use the Node CLI runtime to execute .aiflow workflows from your terminal.",
+          href: "https://github.com/joetranga-wq/AIflow#cli-runtime"
+        },
+        {
+          title: "Example workflows",
+          tag: "Examples",
+          description:
+            "Customer support, marketing content and lead qualification example flows.",
+          href: "https://github.com/joetranga-wq/AIflow/tree/main/examples"
+        },
+        {
+          title: "Contributing",
+          tag: "Community",
+          description:
+            "Read the contributing guidelines before opening an issue or pull request.",
+          href: "https://github.com/joetranga-wq/AIflow/blob/main/CONTRIBUTING.md"
+        },
+        {
+          title: "Release notes v0.1.0",
+          tag: "Release",
+          description: "Details for the initial v0.1.0 Open Standard Preview release.",
+          href: "https://github.com/joetranga-wq/AIflow/blob/main/RELEASE-NOTES_v0.1.0.md"
+        }
+      ];
+
+      const grid = document.getElementById("docs-grid");
+
+      docs.forEach((doc) => {
+        const card = document.createElement("article");
+        card.className = "card rounded-2xl p-5 md:p-6 flex flex-col";
+
+        card.innerHTML = `
+          <p class="text-xs text-sky-400 font-semibold mb-2">${doc.tag}</p>
+          <h2 class="font-medium text-base mb-2">${doc.title}</h2>
+          <p class="text-slate-400 mb-4 flex-1">${doc.description}</p>
+          <a href="${doc.href}" target="_blank"
+             class="inline-flex items-center text-[13px] text-sky-400 hover:text-sky-300">
+            Open document
+            <span class="ml-1">→</span>
+          </a>
+        `;
+
+        grid.appendChild(card);
+      });
+    </script>
+  </body>
+</html>

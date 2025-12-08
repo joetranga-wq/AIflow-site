@@ -2,13 +2,13 @@
 <html lang="en" data-theme="dark">
   <head>
     <meta charset="utf-8" />
-    <title>AIFLOW – Open Standard for Multi-Agent AI Workflows</title>
+    <title>AIFLOW – Open standard for multi-agent workflows</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- SEO -->
     <meta
       name="description"
-      content="AIFLOW is the open standard for multi-agent AI workflows. Design visually in AIFLOW Studio and execute via browser or CLI runtimes using a single .aiflow file."
+      content="AIFLOW is the open standard for multi-agent workflows. Design visually in AIFLOW Studio and execute via browser or CLI runtimes using a single .aiflow file."
     />
     <meta
       name="keywords"
@@ -19,22 +19,21 @@
     <link rel="canonical" href="https://joetranga-wq.github.io/AIflow-site/" />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="AIFLOW – Open Standard for Multi-Agent AI Workflows" />
+    <meta property="og:title" content="AIFLOW – Open standard for multi-agent workflows" />
     <meta
       property="og:description"
-      content="Design, share, and execute multi-agent AI workflows using the AIFLOW open standard and AIFLOW Studio."
+      content="Design, share, and execute multi-agent workflows using the AIFLOW open standard and AIFLOW Studio."
     />
     <meta property="og:type" content="website" />
-    <!-- Pas deze URL en image aan zodra je een echte og-image hebt -->
     <meta property="og:url" content="https://joetranga-wq.github.io/AIflow-site/" />
     <meta property="og:image" content="https://joetranga-wq.github.io/AIflow-site/og-image.png" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="AIFLOW – Open Standard for Multi-Agent AI Workflows" />
+    <meta name="twitter:title" content="AIFLOW – Open standard for multi-agent workflows" />
     <meta
       name="twitter:description"
-      content="Create portable, multi-agent AI workflows using a single .aiflow file and AIFLOW Studio."
+      content="Create portable, multi-agent workflows using a single .aiflow file and AIFLOW Studio."
     />
     <meta name="twitter:image" content="https://joetranga-wq.github.io/AIflow-site/og-image.png" />
 
@@ -44,7 +43,7 @@
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
         "name": "AIFLOW",
-        "description": "An open standard and Studio for building multi-agent AI workflows using a portable .aiflow file.",
+        "description": "An open standard and Studio for building multi-agent workflows using a portable .aiflow file.",
         "applicationCategory": "DeveloperTool",
         "operatingSystem": "Any",
         "url": "https://joetranga-wq.github.io/AIflow-site/",
@@ -138,31 +137,33 @@
   <body class="text-slate-100 antialiased">
     <!-- PAGE WRAPPER -->
     <div class="min-h-screen flex flex-col">
-
       <!-- NAVBAR -->
       <header class="w-full py-4 border-b border-slate-800/60 bg-slate-950/80 backdrop-blur-xl">
         <div class="max-w-7xl mx-auto px-4 flex items-center justify-between gap-4">
+          <!-- Logo + brand -->
           <div class="flex items-center gap-3">
-            <div
-              class="h-9 w-9 rounded-xl bg-gradient-to-br from-sky-500 to-cyan-400 flex items-center justify-center font-bold text-slate-950"
-            >
-              AI
+            <div class="h-9 w-9 rounded-xl overflow-hidden bg-slate-900/60 flex items-center justify-center">
+              <img src="./aiflow-logo.svg" alt="AIFLOW logo" class="h-8 w-8" />
             </div>
+
             <div>
               <p class="font-semibold tracking-tight leading-none">AIFLOW</p>
               <p class="text-[11px] text-slate-400 tracking-[0.15em] uppercase leading-none">
-                Open AI Workflow Standard
+                Open standard for multi-agent workflows
               </p>
             </div>
           </div>
 
+          <!-- Navigation links -->
           <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
             <a href="#features" class="hover:text-sky-400 transition">Features</a>
             <a href="#examples" class="hover:text-sky-400 transition">Examples</a>
             <a href="#spec" class="hover:text-sky-400 transition">Spec</a>
             <a href="#roadmap" class="hover:text-sky-400 transition">Roadmap</a>
+            <a href="./docs.html" class="hover:text-sky-400 transition">Docs</a>
           </nav>
 
+          <!-- Right side buttons -->
           <div class="flex items-center gap-3">
             <button
               id="theme-toggle"
@@ -184,38 +185,67 @@
 
       <!-- HERO -->
       <section class="hero-grad border-b border-slate-800/70">
-        <div class="max-w-7xl mx-auto px-4 py-16 md:py-20 grid md:grid-cols-2 gap-10 md:gap-12 items-center">
+        <div
+          class="max-w-7xl mx-auto px-4 py-16 md:py-20 grid md:grid-cols-2 gap-10 md:gap-12 items-center"
+        >
           <!-- LEFT -->
           <div class="flex flex-col justify-center">
-            <div class="inline-flex items-center gap-2 px-3 py-1 text-xs rounded-full border border-slate-700/60 mb-4">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 text-xs rounded-full border border-slate-700/60 mb-4"
+            >
               <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
               <span class="text-slate-200">v0.1.0 — Open Standard Preview</span>
             </div>
 
             <h1 class="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight mb-4">
               The open standard for<br class="hidden sm:block" />
-              <span class="text-sky-400">multi-agent AI workflows.</span>
+              <span class="text-sky-400">multi-agent workflows.</span>
             </h1>
 
-            <p class="text-slate-300 text-sm md:text-base leading-relaxed mb-6 max-w-xl">
-              AIFLOW gives engineers a universal <code>.aiflow</code> format for defining, sharing, and
-              executing multi-agent AI systems. Design visually in <strong>AIFLOW Studio</strong>, run them
-              via browser or CLI runtimes, and keep everything in a single portable file.
+            <p
+              class="text-slate-300 text-sm md:text-base leading-relaxed mb-6 max-w-xl"
+            >
+              AIFLOW lets you define, share and execute AI agent workflows using a single
+              portable <code>.aiflow</code> file. Design visually in
+              <strong>AIFLOW Studio</strong>, run them via browser or CLI runtimes, and keep
+              everything in one spec.
             </p>
 
             <div class="flex flex-wrap gap-3 mb-6">
+              <!-- Primary: GitHub -->
               <a
                 href="https://github.com/joetranga-wq/AIflow"
                 target="_blank"
                 class="px-5 py-2.5 rounded-full bg-sky-500 text-slate-950 text-sm font-medium hover:bg-sky-400 shadow-lg shadow-sky-500/20 transition"
               >
-                Explore on GitHub →
+                View on GitHub →
               </a>
+
+              <!-- Download release -->
               <a
-                href="#examples"
-                class="px-5 py-2.5 rounded-full border border-slate-600 text-sm font-medium hover:border-sky-400 hover:text-sky-300 transition"
+                href="https://github.com/joetranga-wq/AIflow/releases/tag/v0.1.0"
+                target="_blank"
+                class="px-5 py-2.5 rounded-full bg-indigo-500/90 text-slate-50 text-sm font-medium border border-indigo-400/50 hover:bg-indigo-400 hover:border-indigo-300 transition"
               >
-                View example workflows
+                Download v0.1.0
+              </a>
+
+              <!-- Spec -->
+              <a
+                href="https://github.com/joetranga-wq/AIflow/blob/main/spec/aiflow-v0.1.md"
+                target="_blank"
+                class="px-5 py-2.5 rounded-full border border-sky-500/70 text-sky-100 text-sm font-medium hover:bg-sky-500/10 transition"
+              >
+                View .aiflow spec
+              </a>
+
+              <!-- Examples -->
+              <a
+                href="https://github.com/joetranga-wq/AIflow/tree/main/examples"
+                target="_blank"
+                class="px-5 py-2.5 rounded-full border border-emerald-500/70 text-emerald-100 text-sm font-medium hover:bg-emerald-500/10 transition"
+              >
+                Explore examples
               </a>
             </div>
 
@@ -233,7 +263,9 @@
             <p class="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">
               Quick start
             </p>
-            <div class="code-block p-4 text-xs md:text-[13px] font-mono text-slate-100 overflow-x-auto">
+            <div
+              class="code-block p-4 text-xs md:text-[13px] font-mono text-slate-100 overflow-x-auto"
+            >
 <pre><code># Clone and launch the AIFLOW Studio
 git clone https://github.com/joetranga-wq/AIflow
 cd AIflow
@@ -267,8 +299,8 @@ npm run run-flow -- ./examples/CustomerSupportFlow_v1.0.0.aiflow</code></pre>
               <p class="text-xs text-emerald-400 font-semibold mb-2">Studio + runtime</p>
               <h3 class="font-medium text-base mb-2">Design and execute cleanly</h3>
               <p class="text-slate-400 leading-relaxed">
-                Design multi-agent workflows visually in AIFLOW Studio, then execute them via the browser
-                or Node CLI runtime. No hidden glue code, fully declarative.
+                Design multi-agent workflows visually in AIFLOW Studio, then execute them via
+                the browser or Node CLI runtime. No hidden glue code, fully declarative.
               </p>
             </div>
 
@@ -276,8 +308,8 @@ npm run run-flow -- ./examples/CustomerSupportFlow_v1.0.0.aiflow</code></pre>
               <p class="text-xs text-indigo-400 font-semibold mb-2">Multi-provider</p>
               <h3 class="font-medium text-base mb-2">Choose your AI stack</h3>
               <p class="text-slate-400 leading-relaxed">
-                Mix OpenAI, Gemini, Anthropic, Groq and more inside one workflow. Each agent defines its
-                own provider, model, role and prompt.
+                Mix OpenAI, Gemini, Anthropic, Groq and more inside one workflow. Each agent
+                defines its own provider, model, role and prompt.
               </p>
             </div>
           </div>
@@ -287,7 +319,9 @@ npm run run-flow -- ./examples/CustomerSupportFlow_v1.0.0.aiflow</code></pre>
       <!-- EXAMPLES -->
       <section id="examples" class="py-16 md:py-20 border-b border-slate-800/70">
         <div class="max-w-7xl mx-auto px-4">
-          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8">
+          <div
+            class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8"
+          >
             <h2 class="text-2xl font-semibold">Example workflows</h2>
             <a
               href="https://github.com/joetranga-wq/AIflow/tree/main/examples"
@@ -303,8 +337,8 @@ npm run run-flow -- ./examples/CustomerSupportFlow_v1.0.0.aiflow</code></pre>
               <p class="text-xs text-sky-400 font-semibold mb-2">Customer support</p>
               <h3 class="font-medium text-base mb-2">CustomerSupportFlow_v1.0.0.aiflow</h3>
               <p class="text-slate-400 mb-4">
-                Multi-agent ticket triage with classifier, engineer and responder steps. Ideal for L1
-                support automation.
+                Multi-agent ticket triage with classifier, engineer and responder steps. Ideal
+                for L1 support automation.
               </p>
               <div class="code-block p-3 text-[11px] font-mono overflow-x-auto mt-auto">
 npm run run-flow -- ./examples/CustomerSupportFlow_v1.0.0.aiflow
@@ -313,10 +347,12 @@ npm run run-flow -- ./examples/CustomerSupportFlow_v1.0.0.aiflow
 
             <div class="card rounded-2xl p-5 md:p-6 flex flex-col">
               <p class="text-xs text-emerald-400 font-semibold mb-2">Marketing</p>
-              <h3 class="font-medium text-base mb-2">MarketingContentFlow_v0.5.0.aiflow</h3>
+              <h3 class="font-medium text-base mb-2">
+                MarketingContentFlow_v0.5.0.aiflow
+              </h3>
               <p class="text-slate-400 mb-4">
-                Go from content idea to strategy, long-form article and social posts, all inside one
-                automated workflow.
+                Go from content idea to strategy, long-form article and social posts, all
+                inside one automated workflow.
               </p>
               <div class="code-block p-3 text-[11px] font-mono overflow-x-auto mt-auto">
 npm run run-flow -- ./examples/MarketingContentFlow_v0.5.0.aiflow
@@ -327,7 +363,8 @@ npm run run-flow -- ./examples/MarketingContentFlow_v0.5.0.aiflow
               <p class="text-xs text-indigo-400 font-semibold mb-2">Sales</p>
               <h3 class="font-medium text-base mb-2">LeadQualificationFlow_v1.0.0.aiflow</h3>
               <p class="text-slate-400 mb-4">
-                Lead intake, qualification and sales briefing. Perfect for B2B funnels and SDR teams.
+                Lead intake, qualification and sales briefing. Perfect for B2B funnels and SDR
+                teams.
               </p>
               <div class="code-block p-3 text-[11px] font-mono overflow-x-auto mt-auto">
 npm run run-flow -- ./examples/LeadQualificationFlow_v1.0.0.aiflow
@@ -340,7 +377,9 @@ npm run run-flow -- ./examples/LeadQualificationFlow_v1.0.0.aiflow
       <!-- SPEC -->
       <section id="spec" class="py-16 md:py-20 border-b border-slate-800/70">
         <div class="max-w-7xl mx-auto px-4">
-          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8">
+          <div
+            class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8"
+          >
             <h2 class="text-2xl font-semibold">AIFLOW specification v0.1</h2>
             <a
               href="https://github.com/joetranga-wq/AIflow/blob/main/spec/aiflow-v0.1.md"
@@ -356,8 +395,8 @@ npm run run-flow -- ./examples/LeadQualificationFlow_v1.0.0.aiflow
               <p class="text-xs text-sky-400 font-semibold mb-2">Structure</p>
               <h3 class="font-medium text-base mb-2">One JSON file, full workflow</h3>
               <p class="text-slate-400 mb-4">
-                AIFLOW describes metadata, agents, routing logic, tools and memory in a single portable
-                JSON document.
+                AIFLOW describes metadata, agents, routing logic, tools and memory in a single
+                portable JSON document.
               </p>
               <div class="code-block p-3 text-[11px] font-mono overflow-x-auto">
 <pre><code>{
@@ -374,8 +413,8 @@ npm run run-flow -- ./examples/LeadQualificationFlow_v1.0.0.aiflow
               <p class="text-xs text-emerald-400 font-semibold mb-2">Execution model</p>
               <h3 class="font-medium text-base mb-2">Deterministic multi-agent routing</h3>
               <p class="text-slate-400 mb-4">
-                The runtime executes agents step by step, parses model output into JSON and uses
-                declarative conditions to determine the next agent.
+                The runtime executes agents step by step, parses model output into JSON and
+                uses declarative conditions to determine the next agent.
               </p>
               <ul class="list-disc list-inside text-slate-400 space-y-1">
                 <li>Start at <code>flow.start</code></li>
@@ -408,7 +447,7 @@ npm run run-flow -- ./examples/LeadQualificationFlow_v1.0.0.aiflow
               <p class="text-xs text-emerald-400 font-semibold mb-2">v0.3</p>
               <ul class="text-slate-400 space-y-1">
                 <li>Tooling standard</li>
-                <li>Built-in HTTP & DB tools</li>
+                <li>Built-in HTTP &amp; DB tools</li>
               </ul>
             </div>
 
@@ -424,7 +463,7 @@ npm run run-flow -- ./examples/LeadQualificationFlow_v1.0.0.aiflow
               <p class="text-xs text-pink-400 font-semibold mb-2">v1.0</p>
               <ul class="text-slate-400 space-y-1">
                 <li>Stable AIFLOW spec</li>
-                <li>Validator & schema</li>
+                <li>Validator &amp; schema</li>
                 <li>Plugin ecosystem</li>
               </ul>
             </div>
@@ -437,7 +476,7 @@ npm run run-flow -- ./examples/LeadQualificationFlow_v1.0.0.aiflow
         <div
           class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-[11px] text-slate-500 gap-2"
         >
-          <p>© AIFLOW — Open standard for multi-agent AI workflows.</p>
+          <p>© AIFLOW — Open standard for multi-agent workflows.</p>
           <div class="flex items-center gap-3">
             <a
               href="https://github.com/joetranga-wq/AIflow"
@@ -458,7 +497,8 @@ npm run run-flow -- ./examples/LeadQualificationFlow_v1.0.0.aiflow
         const root = document.documentElement;
         const btn = document.getElementById("theme-toggle");
         const stored = localStorage.getItem("aiflow-theme");
-        const prefersDark = window.matchMedia &&
+        const prefersDark =
+          window.matchMedia &&
           window.matchMedia("(prefers-color-scheme: dark)").matches;
 
         function applyTheme(theme) {
